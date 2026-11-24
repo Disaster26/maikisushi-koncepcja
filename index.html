@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Restauracja sushi w Kutnie - Maiki Sushi, Plac Wolności 7</title>
+<meta name="description" content="Maiki Sushi - restauracja sushi w centrum Kutna. Rolki kręcone w chwili zamówienia, ramen, udon, zestawy. Na miejscu, na wynos i z dowozem. Catering i Mobilny Sushi Bar na imprezy.">
+<meta name="robots" content="noindex, nofollow" data-podglad>
+<meta name="theme-color" content="#0E0E0E">
+<link rel="icon" href="img/favicon.png">
+<link rel="preload" href="fonts/montserrat-rdzen.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/inter-rdzen.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="img/h-gosc-800.webp" media="(max-width:860px)" imagesrcset="img/h-gosc-480.webp 480w, img/h-gosc-800.webp 800w, img/h-gosc-1100.webp 1100w" imagesizes="100vw" fetchpriority="high">
+<style>
+@font-face{font-family:"Montserrat";font-style:normal;font-weight:500 700;font-display:swap;src:url(fonts/montserrat-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0,U+00A9,U+00AB,U+00B0,U+00B7,U+00BB,U+00D3,U+00F3,U+2013,U+2018-2019,U+201C-201E,U+2022,U+2026}
+@font-face{font-family:"Montserrat";font-style:normal;font-weight:500 700;font-display:swap;src:url(fonts/montserrat-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+@font-face{font-family:"Inter";font-style:normal;font-weight:400 700;font-display:swap;src:url(fonts/inter-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0,U+00A9,U+00AB,U+00B0,U+00B7,U+00BB,U+00D3,U+00D7,U+00F3,U+2013-2014,U+2018-2019,U+201C-201E,U+2022,U+2026,U+20AC}
+@font-face{font-family:"Inter";font-style:normal;font-weight:400 700;font-display:swap;src:url(fonts/inter-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+:root{--czern:#0E0E0E;--czern2:#1A1A1A;--zloto:#D9A95B;--zloto2:#C08D3C;--szary:#F2F3F5;--linia:#E1E3E8;--tekst:#2A2A2C;--hh:76px;
+--pedzel:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 80' preserveAspectRatio='none'%3E%3Cpath d='M8 17C60 8 160 12 250 9c60-2 110-3 142 3l-12 9 16 7-14 8 14 8-16 8 12 10c-54 8-134 10-214 8-70-1-130 4-170-4C4 50 2 32 8 17z'/%3E%3C/svg%3E")}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--hh);-webkit-text-size-adjust:100%}
+body{margin:0;font:400 17px/1.65 Inter,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--tekst);background:#fff;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{font-family:Montserrat,system-ui,sans-serif;font-weight:700;line-height:1.12;letter-spacing:-.015em;color:var(--czern);margin:0}
+h2{font-size:clamp(30px,4vw,50px)}
+h3{font-size:21px}
+p{margin:0}
+.wrap{width:min(1240px,100% - 40px);margin-inline:auto}
+/* przycisk = złote pociągnięcie pędzla z paska "kręcimy na okrągło" */
+.btn{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:58px;padding:0 38px 0 34px;font:700 17px/1 Montserrat,sans-serif;color:var(--czern);text-decoration:none;border:0;background:none;cursor:pointer;isolation:isolate;white-space:nowrap}
+.btn::before{content:"";position:absolute;inset:0;background:var(--zloto);-webkit-mask:var(--pedzel) center/100% 100% no-repeat;mask:var(--pedzel) center/100% 100% no-repeat;z-index:-1;transition:background .2s,transform .2s}
+.btn:hover::before{background:#E6BC74;transform:scaleX(1.03)}
+.btn.bialy::before{background:#fff}
+.btn.czarny{color:#fff}.btn.czarny::before{background:var(--czern)}
+.btn:focus-visible{outline:3px solid var(--zloto);outline-offset:4px}
+.tel{display:inline-flex;align-items:center;gap:10px;font:700 18px/1 Montserrat,sans-serif;text-decoration:none;white-space:nowrap}
+.tel svg{width:20px;height:20px;flex:none}
+/* ensō - pędzlowe koło z logo */
+.enso{display:inline-grid;place-items:center;width:58px;height:58px;position:relative;font:700 19px/1 Montserrat,sans-serif;color:var(--czern);flex:none}
+.enso svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+/* nagłówek */
+.top{position:sticky;top:0;z-index:50;background:var(--czern);color:#fff}
+.top .wrap{display:flex;align-items:center;gap:26px;height:var(--hh)}
+.logo img{width:170px;height:auto}
+.menu{display:flex;gap:2px;margin:0 0 0 auto;padding:0;list-style:none}
+.menu a{display:block;padding:10px 13px;font:600 15.5px/1 Montserrat,sans-serif;text-decoration:none;color:#EDEDED;position:relative}
+.menu a::after{content:"";position:absolute;left:13px;right:13px;bottom:2px;height:5px;background:var(--zloto);-webkit-mask:var(--pedzel) center/100% 100% no-repeat;mask:var(--pedzel) center/100% 100% no-repeat;transform:scaleX(0);transform-origin:left;transition:transform .2s}
+.menu a:hover::after,.menu a[aria-current]::after{transform:scaleX(1)}
+.top .tel{color:var(--zloto)}
+.top .btn{min-height:48px;font-size:15.5px;padding:0 28px 0 24px}
+.burger{display:none;margin-left:auto;width:48px;height:48px;border:0;background:none;padding:11px;cursor:pointer}
+.burger span{display:block;height:2px;background:#fff;margin:6px 0;border-radius:2px}
+.burger span:nth-child(2){width:70%;background:var(--zloto)}
+/* pierwszy ekran: tryptyk z sesji restauracji */
+.hero{position:relative;min-height:calc(100svh - var(--hh));display:flex;align-items:flex-end;color:#fff;background:var(--czern);overflow:hidden}
+.tryptyk{position:absolute;inset:0;display:grid;grid-template-columns:1fr 1fr 1fr;gap:4px}
+.tryptyk img{width:100%;height:100%;object-fit:cover}
+.tryptyk img:nth-child(1){object-position:50% 30%}
+.tryptyk img:nth-child(2){object-position:50% 45%}
+.tryptyk img:nth-child(3){object-position:50% 35%}
+.hero .tel-m{display:none}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(8,8,8,.94) 0%,rgba(8,8,8,.78) 26%,rgba(8,8,8,.35) 50%,rgba(8,8,8,0) 72%)}
+.hero-in{position:relative;z-index:2;width:min(1240px,100% - 40px);margin:0 auto;padding:0 0 clamp(40px,7vh,84px);display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:24px 60px;align-items:end}
+.hero h1{color:#fff;font-size:clamp(34px,4.3vw,64px);max-width:16ch;text-wrap:balance}
+.hero h1 span{color:var(--zloto)}
+.hero .lead{font-size:clamp(17px,1.35vw,20px);color:#ECECEC;max-width:42ch;margin-bottom:26px}
+.hero .cta{display:flex;flex-wrap:wrap;align-items:center;gap:16px 28px}
+.hero .cta .tel{color:#fff;font-size:20px}
+/* pasek informacji */
+.pasek{background:var(--zloto);color:var(--czern)}
+.pasek .wrap{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0}
+.pasek div{padding:20px 26px 20px 0;font-size:16px;line-height:1.45}
+.pasek div+div{padding-left:26px;border-left:1px solid rgba(14,14,14,.22)}
+.pasek b{display:block;font:700 16px/1.3 Montserrat,sans-serif;margin-bottom:3px}
+/* sekcje */
+section{padding:clamp(64px,8.5vw,116px) 0}
+.szary{background:var(--szary)}
+.glowa{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:22px 60px;align-items:end;margin-bottom:42px}
+.glowa p{font-size:18px;max-width:50ch}
+/* menu - karty przesuwane */
+.karty{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 72px)/4);gap:24px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;cursor:grab;padding-bottom:6px}
+.karty::-webkit-scrollbar{display:none}
+.karty.ciagnie{cursor:grabbing;scroll-snap-type:none}
+.karta{scroll-snap-align:start;background:#fff;display:flex;flex-direction:column;user-select:none}
+.karta .fot{aspect-ratio:4/5;overflow:hidden;background:#ddd}
+.karta .fot img{width:100%;height:100%;object-fit:cover;transition:transform .5s;pointer-events:none}
+.karta:hover .fot img{transform:scale(1.04)}
+.karta .opis{padding:20px 22px 24px;display:flex;flex-direction:column;gap:8px;flex:1}
+.karta .opis small{font:600 14px/1 Montserrat,sans-serif;color:var(--zloto2)}
+.karta p{font-size:15.5px;line-height:1.55}
+.strzalki{display:flex;gap:10px;justify-content:flex-end;margin-top:22px}
+.strzalki button{width:52px;height:52px;border-radius:50%;border:2px solid var(--czern);background:none;cursor:pointer;display:grid;place-items:center;color:var(--czern)}
+.strzalki button:hover{background:var(--czern);color:#fff}
+.strzalki svg{width:20px;height:20px}
+.pod-menu{display:flex;flex-wrap:wrap;gap:16px 30px;align-items:center;margin-top:34px}
+.pod-menu p{font-size:16px;color:#555}
+/* ciemna: kręcimy na okrągło */
+.ciemna{background:var(--czern);color:#E6E6E6}
+.ciemna h2,.ciemna h3{color:#fff}
+.okraglo{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:50px 80px;align-items:center}
+.kolo{position:relative;max-width:520px;width:100%;margin-inline:auto;aspect-ratio:1}
+.kolo img{position:absolute;inset:9%;width:82%;height:82%;object-fit:cover;border-radius:50%}
+.kolo svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.okraglo .tx p{font-size:18px;margin-top:18px;max-width:52ch}
+.zasady{list-style:none;padding:0;margin:34px 0 0;display:grid;gap:22px}
+.zasady li{display:flex;gap:18px;align-items:flex-start}
+.zasady .enso{color:var(--zloto)}
+.zasady b{display:block;font:700 18px/1.3 Montserrat,sans-serif;color:#fff;margin:4px 0 4px}
+.zasady span{font-size:16px;color:#C9C9C9}
+/* środa */
+.sroda{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:0;background:var(--szary);overflow:hidden}
+.sroda .fot{min-height:360px;position:relative}
+.sroda .fot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 55%}
+.sroda .tx{padding:clamp(32px,4.5vw,64px);display:flex;flex-direction:column;justify-content:center;gap:16px}
+.procent{font:700 clamp(64px,8vw,104px)/1 Montserrat,sans-serif;color:var(--zloto2);letter-spacing:-.03em}
+.sroda ul{margin:0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:8px 10px}
+.sroda li{padding:8px 14px;background:#fff;font-size:15px;font-weight:600}
+/* wydarzenia */
+.dwa{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.wyd{background:var(--szary);display:flex;flex-direction:column}
+.wyd .fot{aspect-ratio:3/2;overflow:hidden}
+.wyd .fot img{width:100%;height:100%;object-fit:cover}
+.wyd .tx{padding:28px 30px 32px;display:flex;flex-direction:column;gap:12px;flex:1}
+.wyd .tx p{font-size:16.5px}
+.wyd .miasta{display:flex;flex-wrap:wrap;gap:8px}
+.wyd .miasta span{padding:6px 12px;border:1.5px solid var(--czern);font:600 14px/1.2 Montserrat,sans-serif}
+.wyd .tel{color:var(--czern);margin-top:auto;padding-top:8px}
+/* galeria */
+.galeria{display:grid;grid-auto-flow:column;grid-auto-columns:clamp(240px,24vw,340px);gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;cursor:grab;padding-inline:max(20px,calc((100% - 1240px)/2))}
+.galeria::-webkit-scrollbar{display:none}
+.galeria.ciagnie{cursor:grabbing;scroll-snap-type:none}
+.galeria figure{margin:0;scroll-snap-align:center;aspect-ratio:3/4;overflow:hidden;background:#222}
+.galeria img{width:100%;height:100%;object-fit:cover;pointer-events:none;user-select:none}
+/* kontakt */
+.kontakt{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:40px 60px}
+.dane{display:grid;gap:26px;align-content:start}
+.dane h3{font-size:17px;margin-bottom:6px}
+.dane p,.dane li{font-size:16.5px}
+.dane ul{margin:0;padding:0;list-style:none}
+.dane li{display:flex;justify-content:space-between;gap:20px;padding:7px 0;border-bottom:1px solid var(--linia);max-width:400px}
+.dane .tel{font-size:24px;color:var(--czern)}
+.mapa{min-height:260px;background:var(--szary);margin-top:6px}
+.mapa iframe{width:100%;height:300px;border:0;display:block}
+form{background:#fff;padding:clamp(24px,3.5vw,44px);display:grid;grid-template-columns:1fr 1fr;gap:16px;align-content:start;border-top:6px solid var(--zloto)}
+form h3{grid-column:1/-1;font-size:24px}
+form p.info{grid-column:1/-1;font-size:15.5px;color:#555;margin-top:-6px}
+label{display:grid;gap:6px;font:600 14px/1.2 Montserrat,sans-serif;color:var(--czern)}
+input,select,textarea{font:400 16px/1.4 Inter,sans-serif;padding:13px 14px;border:1.5px solid #CDD0D6;background:#fff;color:var(--tekst);width:100%;border-radius:0}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--czern)}
+.pelna{grid-column:1/-1}
+form .btn{justify-self:start}
+.komunikat{grid-column:1/-1;font-size:15px;color:#1d6b3a;display:none}
+/* stopka */
+footer{background:var(--czern);color:#BDBDBD;padding:56px 0 28px;font-size:15px}
+.st{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:30px}
+footer h4{font:700 15px/1.2 Montserrat,sans-serif;color:#fff;margin:0 0 12px}
+footer a{color:#E2E2E2;text-decoration:none}
+footer a:hover{color:var(--zloto)}
+footer ul{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.st img{width:150px;margin-bottom:14px}
+.dol{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;border-top:1px solid #2A2A2A;margin-top:40px;padding-top:22px}
+
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
+
+
+/* mobile */
+.zadzwon-m{display:none}
+@media (max-width:1180px){.menu a{padding:10px 9px;font-size:15px}.top .tel{display:none}}
+@media (max-width:980px){
+ .menu,.top .btn{display:none}.burger{display:block}
+ .menu.otwarte{display:flex;flex-direction:column;position:fixed;top:var(--hh);left:0;right:0;background:var(--czern);padding:10px 20px 26px;gap:0;border-top:1px solid #2a2a2a}
+ .menu.otwarte a{padding:16px 4px;font-size:19px;border-bottom:1px solid #222}
+ .menu.otwarte a::after{display:none}
+ .karty{grid-auto-columns:calc((100% - 24px)/2.15)}
+ .okraglo,.kontakt,.glowa{grid-template-columns:1fr}
+ .st{grid-template-columns:1fr 1fr}
+}
+@media (max-width:860px){
+ :root{--hh:64px}
+ .logo img{width:140px}
+ .tryptyk{grid-template-columns:1fr}
+ .tryptyk img:nth-child(n+2){display:none}
+ .tryptyk img:nth-child(1){object-position:50% 22%}
+ .hero{min-height:calc(100svh - var(--hh))}
+ .hero::after{background:linear-gradient(0deg,rgba(8,8,8,.94) 0%,rgba(8,8,8,.72) 40%,rgba(8,8,8,.1) 68%,rgba(8,8,8,0) 85%)}
+ .hero-in{grid-template-columns:1fr;gap:14px;padding-bottom:26px}
+ .hero h1{font-size:clamp(29px,8.4vw,40px)}
+ .hero .lead{font-size:16px;margin-bottom:24px}
+ .hero .cta{gap:14px 22px}
+ .hero .cta .tel{font-size:18px}
+ .pasek .wrap{grid-template-columns:1fr}
+ .pasek div,.pasek div+div{padding:14px 0;border-left:0}
+ .pasek div+div{border-top:1px solid rgba(14,14,14,.22)}
+ .sroda,.dwa{grid-template-columns:1fr}
+ .sroda .fot{min-height:260px}
+ form{grid-template-columns:1fr}
+ .zadzwon-m{display:flex;opacity:0;pointer-events:none;transition:opacity .25s;position:fixed;right:14px;bottom:14px;z-index:60;width:58px;height:58px;border-radius:50%;background:var(--zloto);color:var(--czern);align-items:center;justify-content:center;box-shadow:0 6px 20px rgba(0,0,0,.3)}
+ .zadzwon-m svg{width:24px;height:24px}
+}
+@media (max-width:560px){
+ .karty{grid-auto-columns:82%;gap:16px}
+ .glowa p{font-size:16.5px}
+ .strzalki{display:none}
+ .btn{min-height:54px;padding:0 30px 0 26px;font-size:16px}
+}
+.zadzwon-m.widac{opacity:1;pointer-events:auto}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header class="top">
+ <div class="wrap">
+  <a class="logo" href="#" aria-label="Maiki Sushi - strona główna"><img src="img/logo.webp" width="361" height="118" alt="Maiki Sushi - kręcimy na okrągło"></a>
+  <ul class="menu" id="menu">
+   <li><a href="#menu-karta">Menu</a></li>
+   <li><a href="#okraglo">O nas</a></li>
+   <li><a href="#promocje">Promocje</a></li>
+   <li><a href="#imprezy">Catering i Sushi Bar</a></li>
+   <li><a href="#galeria">Galeria</a></li>
+   <li><a href="#kontakt">Kontakt</a></li>
+  </ul>
+  <a class="tel" href="tel:+48661057288"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.6 3.5c.6 0 1 .4 1.2.9l1.1 3c.2.5 0 1-.3 1.4L7.4 10c1.2 2.6 3.5 4.9 6.1 6.1l1.2-1.2c.4-.4.9-.5 1.4-.3l3 1.1c.5.2.9.7.9 1.2v2.6c0 1-.8 1.8-1.8 1.8C10 21.3 2.7 14 2.7 5.3c0-1 .8-1.8 1.8-1.8z"/></svg>661 057 288</a>
+  <a class="btn" href="https://maiki-sushi.upmenusite.com/" target="_blank" rel="noopener">Zamów online</a>
+  <button class="burger" aria-label="Otwórz menu" aria-controls="menu" aria-expanded="false"><span></span><span></span><span></span></button>
+ </div>
+</header>
+
+<main>
+<section class="hero" style="padding:0">
+ <div class="tryptyk">
+  <img src="img/h-gosc-800.webp" srcset="img/h-gosc-480.webp 480w, img/h-gosc-800.webp 800w, img/h-gosc-1100.webp 1100w" sizes="(max-width:860px) 100vw, 34vw" width="1100" height="1467" alt="Gość restauracji z talerzem rolek Maiki Sushi" fetchpriority="high">
+  <img src="img/h-rolki-800.webp" srcset="img/h-rolki-480.webp 480w, img/h-rolki-800.webp 800w, img/h-rolki-1100.webp 1100w" sizes="34vw" width="1100" height="1467" alt="Rolki sushi z łososiem podawane pałeczkami">
+  <img src="img/h-mistrz-800.webp" srcset="img/h-mistrz-480.webp 480w, img/h-mistrz-800.webp 800w, img/h-mistrz-1100.webp 1100w" sizes="34vw" width="1100" height="1650" alt="Sushi master opala nigiri palnikiem w kuchni Maiki Sushi">
+ </div>
+ <div class="hero-in">
+  <h1>Restauracja sushi w Kutnie. <span>Kręcimy na okrągło.</span></h1>
+  <div>
+   <p class="lead">Rolki kręcone w chwili zamówienia, ramen i udon. Plac Wolności 7, w samym centrum Miasta Róż. Na miejscu, na wynos i z dowozem.</p>
+   <div class="cta">
+    <a class="btn" href="https://maiki-sushi.upmenusite.com/" target="_blank" rel="noopener">Zamów online</a>
+    <a class="tel" href="tel:+48661057288"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.6 3.5c.6 0 1 .4 1.2.9l1.1 3c.2.5 0 1-.3 1.4L7.4 10c1.2 2.6 3.5 4.9 6.1 6.1l1.2-1.2c.4-.4.9-.5 1.4-.3l3 1.1c.5.2.9.7.9 1.2v2.6c0 1-.8 1.8-1.8 1.8C10 21.3 2.7 14 2.7 5.3c0-1 .8-1.8 1.8-1.8z"/></svg>661 057 288</a>
+   </div>
+  </div>
+ </div>
+</section>
+
+<div class="pasek">
+ <div class="wrap">
+  <div><b>Otwarte codziennie od 12:00</b>pn-czw i nd do 21:00, pt-sob do 22:00</div>
+  <div><b>Dowozimy</b>Kutno, Sójki, Strzelce, Malina, Leszczynek, Woźniaków</div>
+  <div><b>Środa = zupy -15%</b>ramen w godz. 12:00-16:00</div>
+ </div>
+</div>
+
+<section class="szary" id="menu-karta">
+ <div class="wrap">
+  <div class="glowa">
+   <h2>Co dziś kręcimy</h2>
+   <p>Od klasycznych futomaki po fusion rolls z kilkoma składnikami. Mamy też dania wegetariańskie, wegańskie i propozycje bez laktozy czy glutenu.</p>
+  </div>
+  <div class="karty" data-przesuw>
+   <article class="karta"><div class="fot"><img src="img/k-futomaki-400.webp" srcset="img/k-futomaki-400.webp 400w, img/k-futomaki-640.webp 640w" sizes="(max-width:560px) 82vw, 300px" width="400" height="500" loading="lazy" alt="Futomaki z łososiem i awokado"></div><div class="opis"><small>porcja 6 szt.</small><h3>Futomaki</h3><p>Grube rolki zwijane w nori, wypełnione ryżem i kilkoma składnikami.</p></div></article>
+   <article class="karta"><div class="fot"><img src="img/k-uramaki-400.webp" srcset="img/k-uramaki-400.webp 400w, img/k-uramaki-640.webp 640w" sizes="(max-width:560px) 82vw, 300px" width="400" height="500" loading="lazy" alt="Uramaki z łososiem i sezamem"></div><div class="opis"><small>porcja 8 szt.</small><h3>Uramaki</h3><p>Sushi zwijane odwrotnie, z ryżem na zewnątrz.</p></div></article>
+   <article class="karta"><div class="fot"><img src="img/k-fusion-400.webp" srcset="img/k-fusion-400.webp 400w, img/k-fusion-640.webp 640w" sizes="(max-width:560px) 82vw, 300px" width="400" height="500" loading="lazy" alt="Zestaw fusion rolls z orchideą"></div><div class="opis"><small>porcja 8 szt.</small><h3>Fusion rolls</h3><p>Uramaki wzbogacone różnorodnością składników - nasze autorskie kompozycje.</p></div></article>
+   <article class="karta"><div class="fot"><img src="img/k-nigiri-400.webp" srcset="img/k-nigiri-400.webp 400w, img/k-nigiri-640.webp 640w" sizes="(max-width:560px) 82vw, 300px" width="400" height="500" loading="lazy" alt="Nigiri z łososiem i rybą maślaną"></div><div class="opis"><small>klasyka</small><h3>Nigiri i sashimi</h3><p>Plaster świeżej ryby na doprawionym ryżu albo sama ryba podana na talerzu.</p></div></article>
+   <article class="karta"><div class="fot"><img src="img/k-zupy-400.webp" srcset="img/k-zupy-400.webp 400w, img/k-zupy-640.webp 640w" sizes="(max-width:560px) 82vw, 300px" width="400" height="500" loading="lazy" alt="Ramen z jajkiem i warzywami"></div><div class="opis"><small>w środy -15%</small><h3>Zupy</h3><p>Ramen z wołowiną, z krewetkami, z boczkiem i inne.</p></div></article>
+   <article class="karta"><div class="fot"><img src="img/k-makarony-400.webp" srcset="img/k-makarony-400.webp 400w, img/k-makarony-640.webp 640w" sizes="(max-width:560px) 82vw, 300px" width="400" height="500" loading="lazy" alt="Udon z łososiem i warzywami"></div><div class="opis"><small>na ciepło</small><h3>Makarony</h3><p>Udon z kurczakiem lub łososiem i warzywami, udon z warzywami, pad thai z sosem z tamaryndowca.</p></div></article>
+   <article class="karta"><div class="fot"><img src="img/k-przystawki-400.webp" srcset="img/k-przystawki-400.webp 400w, img/k-przystawki-640.webp 640w" sizes="(max-width:560px) 82vw, 300px" width="400" height="500" loading="lazy" alt="Tatar z łososia na ryżu"></div><div class="opis"><small>na początek</small><h3>Przystawki</h3><p>Sałatka wakame, kimchi, krewetki w panko, sezonowe warzywa w tempurze.</p></div></article>
+   <article class="karta"><div class="fot"><img src="img/k-bao-400.webp" srcset="img/k-bao-400.webp 400w, img/k-bao-640.webp 640w" sizes="(max-width:560px) 82vw, 300px" width="400" height="500" loading="lazy" alt="Bao z tofu na niebieskim talerzu"></div><div class="opis"><small>kuchnia azjatycka</small><h3>Bao i dania wege</h3><p>Dla tych, którzy szukają czegoś poza tradycyjnym sushi.</p></div></article>
+  </div>
+  <div class="strzalki"><button type="button" data-kier="-1" aria-label="Poprzednie"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M15 5l-7 7 7 7"/></svg></button><button type="button" data-kier="1" aria-label="Następne"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 5l7 7-7 7"/></svg></button></div>
+  <div class="pod-menu">
+   <a class="btn czarny" href="https://maiki-sushi.upmenusite.com/" target="_blank" rel="noopener">Pełne menu z cenami</a>
+   <p>Zamówienie online z dowozem albo odbiorem w restauracji.</p>
+  </div>
+ </div>
+</section>
+
+<section class="ciemna" id="okraglo">
+ <div class="wrap okraglo">
+  <div class="kolo">
+   <img src="img/h-mistrz-800.webp" srcset="img/h-mistrz-480.webp 480w, img/h-mistrz-800.webp 800w" sizes="(max-width:980px) 90vw, 520px" width="800" height="1200" loading="lazy" alt="Przygotowanie nigiri w kuchni Maiki Sushi">
+   <svg viewBox="0 0 200 200" aria-hidden="true"><path d="M112 9C160 15 192 54 190 102c-2 50-44 90-94 88C47 188 9 147 11 97 13 52 47 15 92 10" fill="none" stroke="#D9A95B" stroke-width="5.5" stroke-linecap="round"/><path d="M98 13C140 12 178 42 184 86" fill="none" stroke="#D9A95B" stroke-width="2.5" stroke-linecap="round" opacity=".55"/></svg>
+  </div>
+  <div class="tx">
+   <h2>Kręcimy na okrągło - i zawsze na świeżo</h2>
+   <p>Każda rolka powstaje w chwili zamówienia i trafia na stół najszybciej, jak potrafimy. Ryby i owoce morza bierzemy od sprawdzonych dostawców, a kompozycje układamy sami.</p>
+   <ul class="zasady">
+    <li><span class="enso"><svg viewBox="0 0 60 60" aria-hidden="true"><path d="M34 4c14 2 23 13 22 27-1 14-13 25-27 24C15 54 4 42 5 28 6 15 16 5 29 4" fill="none" stroke="#D9A95B" stroke-width="3.2" stroke-linecap="round"/></svg>1</span><div><b>Na bieżąco</b><span>Bez gotowców z lodówki - kręcimy, kiedy zamawiasz.</span></div></li>
+    <li><span class="enso"><svg viewBox="0 0 60 60" aria-hidden="true"><path d="M34 4c14 2 23 13 22 27-1 14-13 25-27 24C15 54 4 42 5 28 6 15 16 5 29 4" fill="none" stroke="#D9A95B" stroke-width="3.2" stroke-linecap="round"/></svg>2</span><div><b>Dla każdego</b><span>Ryba, wege, wegańsko, bez laktozy i glutenu.</span></div></li>
+    <li><span class="enso"><svg viewBox="0 0 60 60" aria-hidden="true"><path d="M34 4c14 2 23 13 22 27-1 14-13 25-27 24C15 54 4 42 5 28 6 15 16 5 29 4" fill="none" stroke="#D9A95B" stroke-width="3.2" stroke-linecap="round"/></svg>3</span><div><b>Na miejscu albo w domu</b><span>Sala w centrum Kutna, wynos i dowóz do okolicznych miejscowości.</span></div></li>
+   </ul>
+  </div>
+ </div>
+</section>
+
+<section id="promocje">
+ <div class="wrap">
+  <div class="sroda szary">
+   <div class="fot"><img src="img/k-zupy-640.webp" width="640" height="800" loading="lazy" alt="Miska ramenu trzymana w dłoniach"></div>
+   <div class="tx">
+    <h2>Każda środa to dzień zup</h2>
+    <div class="procent">-15%</div>
+    <p>Na ramen w godzinach 12:00-16:00. Wpadnij w przerwie albo zamów do biura.</p>
+    <ul><li>Ramen z wołowiną</li><li>Ramen z krewetkami</li><li>Ramen z boczkiem</li></ul>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="szary" id="imprezy">
+ <div class="wrap">
+  <div class="glowa">
+   <h2>Sushi na Twoje przyjęcie</h2>
+   <p>Catering na wesela, bankiety i spotkania firmowe oraz Mobilny Sushi Bar - sushi master kręci rolki na oczach gości.</p>
+  </div>
+  <div class="dwa">
+   <article class="wyd">
+    <div class="fot"><img src="img/bar-800.webp" srcset="img/bar-800.webp 800w, img/bar-1200.webp 1200w" sizes="(max-width:860px) 100vw, 610px" width="800" height="533" loading="lazy" alt="Sushi master układa rolki na desce"></div>
+    <div class="tx">
+     <h3>Mobilny Sushi Bar</h3>
+     <p>Eventy firmowe, imprezy okolicznościowe i przyjęcia w plenerze. Ofertę układamy pod liczbę gości i charakter wydarzenia.</p>
+     <a class="tel" href="tel:+48669855500"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.6 3.5c.6 0 1 .4 1.2.9l1.1 3c.2.5 0 1-.3 1.4L7.4 10c1.2 2.6 3.5 4.9 6.1 6.1l1.2-1.2c.4-.4.9-.5 1.4-.3l3 1.1c.5.2.9.7.9 1.2v2.6c0 1-.8 1.8-1.8 1.8C10 21.3 2.7 14 2.7 5.3c0-1 .8-1.8 1.8-1.8z"/></svg>669 855 500</a>
+    </div>
+   </article>
+   <article class="wyd">
+    <div class="fot"><img src="img/catering-800.webp" srcset="img/catering-800.webp 800w, img/catering-1200.webp 1200w" sizes="(max-width:860px) 100vw, 610px" width="800" height="533" loading="lazy" alt="Duży półmisek sushi z krewetkami na catering"></div>
+    <div class="tx">
+     <h3>Catering i dowóz poza Kutno</h3>
+     <p>Zestawy na wydarzenia i dowóz do sąsiednich miast. Menu dobieramy indywidualnie.</p>
+     <div class="miasta"><span>Łódź</span><span>Zgierz</span><span>Łęczyca</span><span>Gostynin</span></div>
+     <a class="tel" href="mailto:maiki.sushi@op.pl">maiki.sushi@op.pl</a>
+    </div>
+   </article>
+  </div>
+ </div>
+</section>
+
+<section id="galeria" style="padding-inline:0">
+ <div class="wrap glowa" style="margin-bottom:34px">
+  <h2>Zajrzyj do Maiki</h2>
+  <p>Kilka kadrów z naszej kuchni i sali. Przesuń, żeby zobaczyć więcej.</p>
+ </div>
+ <div class="galeria" data-przesuw>
+  <figure><img src="img/g1-420.webp" srcset="img/g1-420.webp 420w, img/g1-900.webp 900w" sizes="(max-width:860px) 240px, 24vw" width="420" height="560" loading="lazy" alt="Gość z miską sushi"></figure>
+  <figure><img src="img/g2-420.webp" srcset="img/g2-420.webp 420w, img/g2-900.webp 900w" sizes="(max-width:860px) 240px, 24vw" width="420" height="560" loading="lazy" alt="Pad thai w misce wśród liści"></figure>
+  <figure><img src="img/g8-420.webp" srcset="img/g8-420.webp 420w, img/g8-900.webp 900w" sizes="(max-width:860px) 240px, 24vw" width="420" height="560" loading="lazy" alt="Gość przy dużym zestawie sushi"></figure>
+  <figure><img src="img/g3-420.webp" srcset="img/g3-420.webp 420w, img/g3-900.webp 900w" sizes="(max-width:860px) 240px, 24vw" width="420" height="560" loading="lazy" alt="Zielony koktajl z liściem palmy"></figure>
+  <figure><img src="img/g5-420.webp" srcset="img/g5-420.webp 420w, img/g5-900.webp 900w" sizes="(max-width:860px) 240px, 24vw" width="420" height="560" loading="lazy" alt="Wnętrze restauracji Maiki Sushi wieczorem"></figure>
+  <figure><img src="img/g4-420.webp" srcset="img/g4-420.webp 420w, img/g4-900.webp 900w" sizes="(max-width:860px) 240px, 24vw" width="420" height="560" loading="lazy" alt="Kolacja z tempurą i koktajlem"></figure>
+  <figure><img src="img/g7-420.webp" srcset="img/g7-420.webp 420w, img/g7-900.webp 900w" sizes="(max-width:860px) 240px, 24vw" width="420" height="560" loading="lazy" alt="Deska futomaki i uramaki z imbirem"></figure>
+  <figure><img src="img/g6-420.webp" srcset="img/g6-420.webp 420w, img/g6-900.webp 900w" sizes="(max-width:860px) 240px, 24vw" width="420" height="560" loading="lazy" alt="Gość jedzący ramen przy oknie"></figure>
+  <figure><img src="img/g9-420.webp" srcset="img/g9-420.webp 420w, img/g9-900.webp 900w" sizes="(max-width:860px) 240px, 24vw" width="420" height="560" loading="lazy" alt="Koktajle w restauracji"></figure>
+ </div>
+</section>
+
+<section class="szary" id="kontakt">
+ <div class="wrap kontakt">
+  <div class="dane">
+   <h2>Zapraszamy na Plac Wolności 7</h2>
+   <div><h3>Rezerwacje i zamówienia</h3><a class="tel" href="tel:+48661057288">661 057 288</a></div>
+   <div><h3>Adres</h3><p>Plac Wolności 7, 99-300 Kutno</p></div>
+   <div><h3>Godziny otwarcia</h3>
+    <ul><li><span>Poniedziałek - czwartek</span><span>12:00-21:00</span></li><li><span>Piątek - sobota</span><span>12:00-22:00</span></li><li><span>Niedziela</span><span>12:00-21:00</span></li></ul>
+   </div>
+   <div class="mapa" data-mapa="https://www.google.com/maps?q=Restauracja+japo%C5%84ska+Maiki+Sushi,+Plac+Wolno%C5%9Bci+7,+Kutno&amp;output=embed"></div>
+  </div>
+  <form id="rez" novalidate>
+   <h3>Zarezerwuj stolik</h3>
+   <p class="info">Oddzwonimy albo odpiszemy z potwierdzeniem.</p>
+   <label>Imię<input name="imie" autocomplete="given-name"></label>
+   <label>Telefon<input name="tel" type="tel" autocomplete="tel"></label>
+   <label>Dzień<input name="dzien" type="date"></label>
+   <label>Godzina<select name="godz"><option>12:00</option><option>13:00</option><option>14:00</option><option>15:00</option><option>16:00</option><option>17:00</option><option selected>18:00</option><option>19:00</option><option>20:00</option></select></label>
+   <label class="pelna">Liczba osób<select name="osoby"><option>2</option><option>3</option><option>4</option><option>5-8</option><option>więcej niż 8</option></select></label>
+   <label class="pelna">Uwagi (np. urodziny, krzesełko dla dziecka)<textarea name="uwagi" rows="3"></textarea></label>
+   <button class="btn" type="submit">Wyślij rezerwację</button>
+   <p class="komunikat" role="status">To podgląd - formularz nie wysyła jeszcze wiadomości.</p>
+  </form>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="wrap">
+  <div class="st">
+   <div><img src="img/logo.webp" width="361" height="118" alt="Maiki Sushi" loading="lazy"><p>Restauracja sushi i kuchni japońskiej w centrum Kutna.</p></div>
+   <div><h4>Kontakt</h4><ul><li><a href="tel:+48661057288">661 057 288</a></li><li><a href="mailto:maiki.sushi@op.pl">maiki.sushi@op.pl</a></li><li>Plac Wolności 7, Kutno</li></ul></div>
+   <div><h4>Restauracja</h4><ul><li><a href="#menu-karta">Menu</a></li><li><a href="#promocje">Promocje</a></li><li><a href="#galeria">Galeria</a></li></ul></div>
+   <div><h4>Wydarzenia</h4><ul><li><a href="#imprezy">Mobilny Sushi Bar</a></li><li><a href="#imprezy">Catering</a></li><li><a href="https://www.facebook.com/MAIKI-SUSHI-102840031108623" target="_blank" rel="noopener">Facebook</a></li></ul></div>
+  </div>
+  <div class="dol"><span>© 2026 Maiki Sushi, Kutno</span><a class="wylinka-badge" href="https://wylinka.pl/?utm_source=maikisushi.pl&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a>
+</div>
+ </div>
+</footer>
+<a class="zadzwon-m" href="tel:+48661057288" aria-label="Zadzwoń: 661 057 288"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.6 3.5c.6 0 1 .4 1.2.9l1.1 3c.2.5 0 1-.3 1.4L7.4 10c1.2 2.6 3.5 4.9 6.1 6.1l1.2-1.2c.4-.4.9-.5 1.4-.3l3 1.1c.5.2.9.7.9 1.2v2.6c0 1-.8 1.8-1.8 1.8C10 21.3 2.7 14 2.7 5.3c0-1 .8-1.8 1.8-1.8z"/></svg></a>
+<script>
+(function(){
+ var b=document.querySelector('.burger'),m=document.getElementById('menu');
+ b.addEventListener('click',function(){var o=m.classList.toggle('otwarte');b.setAttribute('aria-expanded',o)});
+ m.addEventListener('click',function(e){if(e.target.tagName==='A'){m.classList.remove('otwarte');b.setAttribute('aria-expanded','false')}});
+ document.querySelectorAll('[data-przesuw]').forEach(function(el){
+  var d=false,x0=0,s0=0,ruch=0;
+  el.addEventListener('pointerdown',function(e){if(e.pointerType!=='mouse')return;d=true;ruch=0;x0=e.clientX;s0=el.scrollLeft;el.classList.add('ciagnie')});
+  window.addEventListener('pointermove',function(e){if(!d)return;ruch=Math.abs(e.clientX-x0);el.scrollLeft=s0-(e.clientX-x0)});
+  window.addEventListener('pointerup',function(){if(!d)return;d=false;el.classList.remove('ciagnie')});
+  el.addEventListener('click',function(e){if(ruch>6){e.preventDefault();e.stopPropagation()}},true);
+ });
+ var k=document.querySelector('.karty');
+ document.querySelectorAll('.strzalki button').forEach(function(bt){bt.addEventListener('click',function(){var c=k.querySelector('.karta');k.scrollBy({left:(c.offsetWidth+24)*bt.dataset.kier,behavior:'smooth'})})});
+ var zm=document.querySelector('.zadzwon-m'),hero=document.querySelector('.hero');
+ function pz(){zm.classList.toggle('widac',hero.getBoundingClientRect().bottom<80)}
+ addEventListener('scroll',pz,{passive:true});pz();
+ var mp=document.querySelector('[data-mapa]');
+ if('IntersectionObserver' in window){var io=new IntersectionObserver(function(en){if(en[0].isIntersecting){mp.innerHTML='<iframe loading="lazy" title="Mapa dojazdu do Maiki Sushi" src="'+mp.dataset.mapa+'"></iframe>';io.disconnect()}},{rootMargin:'300px'});io.observe(mp)}
+ document.getElementById('rez').addEventListener('submit',function(e){e.preventDefault();this.querySelector('.komunikat').style.display='block'});
+})();
+</script>
+</body>
+</html>
